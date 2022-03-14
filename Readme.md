@@ -1,11 +1,11 @@
 # Find out to which artist a song most-likely belongs!
-## Lyrics classifier with command-line tools for: 
-### 1. Scraping of all lyrics of chosen artists from [lyrics.com](lyrics.com)
+## Lyrics-classifier with command-line tools for: 
+### 1. Scraping of all lyrics of chosen artists from [lyrics.com](https://www.lyrics.com)
 ### 2. Building a dataframe-file of all the scraped lyrics
 ### 3. Finding out to which of the artists a text-example most likely belongs (classify)
 \
 ![diagram](./img/lyrics_classifier1.png)
-\
+
 ### A [Naive-Bayes Classification](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html) is used on a [tf-idf-vectorized](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) lyrics-corpus (bag-of-words) with filtered and [lemmatized](https://www.nltk.org/_modules/nltk/stem/wordnet.html) words.
 \
 You can use the tools in __3__ steps:
@@ -31,7 +31,7 @@ Repeat for every chosen artist.
 &nbsp;
 ### 3. Find out to which of the artists a text-example most likely belongs:
 ```bash
-python classify_lyrics.py "May I have your attention please?, Will the real Slim Shady please stand up?"
+python classify_lyrics.py "May I have your attention please? Will the real Slim Shady please stand up?"
 ```
 or
 ```bash
