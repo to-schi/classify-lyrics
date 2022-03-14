@@ -1,4 +1,4 @@
-from farben import color
+from utils.farben import color
 import argparse
 import re
 import requests

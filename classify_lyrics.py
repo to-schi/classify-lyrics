@@ -1,5 +1,5 @@
-from farben import color
-import my_stopwords
+from utils.farben import color
+import utils.my_stopwords
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
@@ -35,7 +35,7 @@ corpus = corpus["songs"]
 
 def clean_text(song):
     lemmatizer = WordNetLemmatizer()
-    stop_words = my_stopwords.english #stopwords.words('english')
+    stop_words = utils.my_stopwords.english #stopwords.words('english')
     words = word_tokenize(str(song).lower())
     filtered_words = []
     for word in words:
