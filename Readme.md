@@ -1,5 +1,5 @@
 # Find out to which artist a song most-likely belongs!
-## Lyrics classifier with command-line tools for: 
+## Lyrics-classifier with command-line tools for: 
 ### 1. Scraping of all lyrics of chosen artists from [lyrics.com](lyrics.com)
 ### 2. Building a dataframe-file of all the scraped lyrics
 ### 3. Finding out to which of the artists a text-example most likely belongs (classify)
