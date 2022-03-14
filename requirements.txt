@@ -1,0 +1,5 @@
+pandas
+sklearn
+imbalanced-learn
+nltk
+beautifulsoup4
