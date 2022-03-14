@@ -1,4 +1,4 @@
-# Find out to which artist a song most-likely belongs!
+# Find out to which artist a song most likely belongs!
 ## Lyrics-classifier with command-line tools for: 
 ### 1. Scraping of all lyrics of chosen artists from [lyrics.com](https://www.lyrics.com)
 ### 2. Building a dataframe-file of all the scraped lyrics
@@ -14,6 +14,7 @@ You can use the tools in __3__ steps:
 Choose 2-4 Artists from Lyrics.com and copy the artist-urls.\
 Download the lyrics for each artist with:
 ```bash
+# python get_lyrics.py "artist_name" "url"
 python get_lyrics.py eminem https://www.lyrics.com/artist/Eminem/
 ```
 This will create a folder "eminem_lyrics" with all lyrics available as txt-files. As a song can exist in multiple versions, there can be several lyrics-files for one song. For better results, duplicates may be deleted before proceeding. 
@@ -21,9 +22,9 @@ You can take a few files out of the folder to use them with the classifier later
 \
 &nbsp;
 ### 2. Add to Dataframe:
-
 Add an artist's lyrics to the dataframe with:
 ```bash
+# python add_to_dataframe.py "artist_name"
 python add_to_dataframe.py eminem
 ```
 Repeat for every chosen artist.
