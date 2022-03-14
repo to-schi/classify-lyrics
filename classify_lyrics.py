@@ -34,6 +34,9 @@ corpus, labels = rus.fit_resample(corpus, labels)
 corpus = corpus["songs"]
 
 def clean_text(song):
+    '''
+    Filters text for stop_words (list) and lemmatizes each remaining word.
+    '''
     lemmatizer = WordNetLemmatizer()
     stop_words = utils.my_stopwords.english #stopwords.words('english')
     words = word_tokenize(str(song).lower())
@@ -45,6 +48,9 @@ def clean_text(song):
     return " ".join(filtered_words)
 
 def clean_corpus(corpus):
+    '''
+    Iterates over the whole corpus and applies "clean_text" to every entry. 
+    '''
     clean_corpus = []
     for song in corpus:
         cleaned_song = clean_text(song)
