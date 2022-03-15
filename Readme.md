@@ -11,7 +11,7 @@
 You can use the tools in __3__ steps:
 
 ### 1. Get Lyrics:
-Choose 2-4 Artists from Lyrics.com and copy the artist-urls.\
+Choose 2-4 artists from Lyrics.com and copy the artist-urls.\
 Download the lyrics for each artist with:
 ```bash
 # python get_lyrics.py "artist_name" "url"
@@ -39,3 +39,5 @@ or
 python classify_lyrics.py songname.txt
 ```
 A whole song will perform much better than a small text-sample.
+
+This project was part of the [Spiced Academy](https://www.spiced-academy.com) Data Science Bootcamp Nov/2021.
