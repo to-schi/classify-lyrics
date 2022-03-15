@@ -40,4 +40,4 @@ python classify_lyrics.py songname.txt
 ```
 A whole song will perform much better than a small text-sample.
 
-This project was part of the [Spiced Academy](https://www.spiced-academy.com) Data Science Bootcamp Nov/2021.
+This project was created during the [Spiced Academy](https://www.spiced-academy.com) Data Science Bootcamp Nov/2021.
